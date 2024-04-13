@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Withdraw Money</title>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<!-- Stylesheet -->
+<link rel="stylesheet" href="withdraw.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="withdraw-money-page">
+    <h2>Withdraw Money</h2>
+    <div class="withdraw-list">
+        <div class="withdraw-item">
+            <span>Smith</span>
+            <span>$100</span>
+            <button class="approve-button" onclick="approveWithdraw(this)">Approve</button>
+        </div>
+        <div class="withdraw-item">
+            <span>John </span>
+            <span>$50</span>
+            <button class="approve-button" onclick="approveWithdraw(this)">Approve</button>
+        </div>
+        <div class="withdraw-item">
+            <span>Park</span>
+            <span>$1000</span>
+            <button class="approve-button" onclick="approveWithdraw(this)">Approve</button>
+        </div>
+        <div class="withdraw-item">
+            <span>Rose</span>
+            <span>$200</span>
+            <button class="approve-button" onclick="approveWithdraw(this)">Approve</button>
+        </div>
+        <div class="withdraw-item">
+            <span>Jenny</span>
+            <span>$400</span>
+            <button class="approve-button" onclick="approveWithdraw(this)">Approve</button>
+        </div>
+        <!-- Repeat for other withdraw items -->
+    </div>
+</div>
+<script>
+function approveWithdraw(button) {
+    var withdrawItem = button.parentElement;
+    var userName = withdrawItem.querySelector('span').innerText;
+    var amount = withdrawItem.querySelector('span:nth-child(2)').innerText;
+    // Perform your approval logic here, for example:
+    alert(`Withdrawal of ${amount} for ${userName} is approved.`);
+    // Remove the withdraw item from the list
+    withdrawItem.remove();
+}
+</script>
+</body>
+</html>

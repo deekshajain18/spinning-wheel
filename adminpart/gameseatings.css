@@ -1,0 +1,32 @@
+/* Styles for the Game Settings page */
+.game-settings-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.game-settings-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.settings-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.setting-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.setting-button:hover {
+    background-color: #0056b3;
+}

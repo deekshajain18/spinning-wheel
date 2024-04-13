@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Screen</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <form id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit" onclick="redirecttournament()">Login</button>
+        <button type="button" onclick="register()">Register</button>
+    </form>
+    <a href="#" onclick="forgotPassword()">Forgot Password?</a>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

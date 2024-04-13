@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tournaments</title>
+<link rel="stylesheet" href="tournament.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="left-icons">
+        <div class="nav-item">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="nav-item" onclick="back()">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+    </div>
+    <div class="right-icons">
+        <div class="nav-item">
+            <i class="fas fa-dollar-sign"></i>
+        </div>
+        <div class="nav-item"onclick="draw()">
+            <i class="fas fa-coins"></i> 10000
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-user"></i>
+        </div>
+    </div>
+</div>
+
+<div class="tournament-container">
+    <div class="tournament">
+        <h2>Tournament 1</h2>
+        <div class="tournament-details">
+            <div id="countdown1">Tournament starts in <span class="countdown-timer"></span></div>
+            <div>
+                <p>Price: $<span class="tournament-price">100</span></p>
+                <p>Number of people joined: <span class="people-joined">0</span></p>
+            </div>
+            <button class="join-button" onclick="join()">Join</button>
+        </div>
+    </div>
+    
+    <div class="tournament">
+        <h2>Tournament 2</h2>
+        <div class="tournament-details">
+            <div id="countdown2">Tournament starts in <span class="countdown-timer"></span></div>
+            <div>
+                <p>Price: $<span class="tournament-price">50</span></p>
+                <p>Number of people joined: <span class="people-joined">0</span></p>
+            </div>
+            <button class="join-button" onclick="join()">Join</button>
+        </div>
+    </div>
+</div>
+
+<script src="tournament.js"></script>
+</body>
+</html>

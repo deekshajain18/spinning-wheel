@@ -1,0 +1,97 @@
+/* Styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar .left-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .left-icons .nav-item {
+    margin-right: 20px;
+}
+
+.navbar .right-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .right-icons .nav-item {
+    margin-left: 20px;
+}
+
+/* Styles for the withdraw container */
+.withdraw-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.withdraw-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.present-amount {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.withdraw-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.withdraw-container label {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.withdraw-container input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.withdraw-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.withdraw-container button:hover {
+    background-color: #0056b3;
+}
+
+.winning-history {
+    margin-top: 20px;
+}
+
+.winning-history h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.winning-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.winning-history ul li {
+    margin-bottom: 5px;
+    color: #555;
+}

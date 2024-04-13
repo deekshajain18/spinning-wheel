@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Withdraw Money</title>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<!-- Stylesheet -->
+<link rel="stylesheet" href="withdraw.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="left-icons">
+        <div class="nav-item" onclick="home()">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="nav-item" onclick="back()">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+    </div>
+    <div class="right-icons">
+        <div class="nav-item">
+            <i class="fas fa-dollar-sign"></i>
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-coins"></i> 10000
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-user"></i>
+        </div>
+    </div>
+</div>
+
+<div class="withdraw-container">
+    <h2>Withdraw</h2>
+    <div class="present-amount">
+        Present Amount: <span id="present-amount">$10000</span>
+    </div>
+    <form>
+        <label for="withdraw-amount">Enter Amount:</label>
+        <input type="text" id="withdraw-amount" name="withdraw-amount" placeholder="$">
+        
+        <button type="submit">Withdraw</button>
+    </form>
+    <div class="winning-history">
+        <h3>Winning History</h3>
+        <ul>
+            <li>Winning 1: $50</li>
+            <li>Winning 2: $30</li>
+            <!-- Add more winning history items as needed -->
+        </ul>
+    </div>
+</div>
+<script src="withdraw.js"></script>
+</body>
+</html>

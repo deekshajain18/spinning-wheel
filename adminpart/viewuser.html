@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>View User</title>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<!-- Stylesheet -->
+<link rel="stylesheet" href="viewuser.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="view-user-page">
+    <h2>View User</h2>
+    <div class="user-table">
+        <div class="table-header">
+            <span>Serial Number</span>
+            <span>Username</span>
+            <span>Win</span>
+            <span>Loss</span>
+            <span>Actions</span>
+        </div>
+        <div class="table-row">
+            <span>1</span>
+            <span>Smith</span>
+            <span>200</span>
+            <span>100</span>
+            <div class="actions">
+                <button class="ban-button" onclick="deleteUser(this)">Ban</button>
+                <button class="view-button" >View</button>
+            </div>
+        </div>
+        <div class="table-row">
+            <span>2</span>
+            <span>Park</span>
+            <span>300</span>
+            <span>100</span>
+            <div class="actions">
+                <button class="ban-button" onclick="deleteUser(this)">Ban</button>
+                <button class="view-button">View</button>
+            </div>
+        </div>
+        <div class="table-row">
+            <span>3</span>
+            <span>Rose</span>
+            <span>0</span>
+            <span>500</span>
+            <div class="actions">
+                <button class="ban-button" onclick="deleteUser(this)">Ban</button>
+                <button class="view-button">View</button>
+            </div>
+        </div>
+        <div class="table-row">
+            <span>4</span>
+            <span>Kim</span>
+            <span>100</span>
+            <span>500</span>
+            <div class="actions">
+                <button class="ban-button" onclick="deleteUser(this)">Ban</button>
+                <button class="view-button">View</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="viewuser.js"></script>
+</body>
+</html>
